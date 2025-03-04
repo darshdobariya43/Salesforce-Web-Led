@@ -16,7 +16,8 @@
     <div>
         <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQy00000HeQOb"
             method="POST" onsubmit="beforSubmit(event)">
-
+            
+            <input type=hidden name='captcha_settings' value='{"keyname":"WebToLead","fallback":"true","orgId":"00DQy00000HeQOb","ts":""}'>
             <input type=hidden name="oid" value="00DQy00000HeQOb">
             <input type=hidden name="retURL" value="https://darshdobariya43.github.io/dark-profile">
             <input type=hidden name="Led_Generate_Date__c"  class="outputDate">
