@@ -16,8 +16,8 @@
     <div>
         <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQy00000HeQOb"
             method="POST" onsubmit="beforSubmit(event)">
-            
-            <input type=hidden name='captcha_settings' value='{"keyname":"WebToLead","fallback":"true","orgId":"00DQy00000HeQOb","ts":""}'>
+
+            <input type=hidden name='captcha_settings' value='{"keyname":"NewCaptch","fallback":"true","orgId":"00DQy00000HeQOb","ts":""}'>
             <input type=hidden name="oid" value="00DQy00000HeQOb">
             <input type=hidden name="retURL" value="https://darshdobariya43.github.io/dark-profile">
             <input type=hidden name="Led_Generate_Date__c"  class="outputDate">
@@ -38,9 +38,9 @@
                 type="date" class="inputDate" /><br>
 
             <!-- Led Generate Date:<span class="dateInput dateOnlyInput"><input  id="00NQy00000ORkc3" name="00NQy00000ORkc3" size="12" type="text" /></span><br> -->
-            <div class="g-recaptcha" data-sitekey="6Ldr7ugqAAAAANdhFZ0o7OAshE0xriZm3o9mtOw1"></div><br>
+            <div class="g-recaptcha" data-callback="capthchasuccess" data-sitekey="6LcqNekqAAAAABjtUOSgqoL4geWUBn7-XFlYtCYy"></div><br>
             <input type="submit" name="submit" class="button">
-
+             
         </form>
  
     
