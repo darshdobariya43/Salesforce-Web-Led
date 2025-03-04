@@ -1,3 +1,18 @@
+let capthachecked = false;
+function beforesubmit(event) {
+  if (capthachecked) {
+    let outputdate = document.querySelector(".outputdate");
+    let inputdate = document.querySelector(".inputdate");
+    console.log("inputdate.value", inputdate.value); //string --> date (en_IN)
+
+    let formattedDate = new Date(inputdate.value).toLocaleDateString("en-IN");
+    outputdate.value = formattedDate;
+  } else {
+    alert("Please check the reCAPTCHA box to submit the lead");
+    event.preventDefault();
+  }
+}
+
 function timestamp() {
   var response = document.getElementById("g-recaptcha-response");
   if (response == null || response.value.trim() == "") {
@@ -11,11 +26,6 @@ function timestamp() {
 }
 setInterval(timestamp, 500);
 
-function beforSubmit(){
-    let inputDate = document.querySelector('.inputDate');
-    let outputDate = document.querySelector('.outputDate');
-
-    let formateDate =new Date(inputDate.value).toLocaleDateString('en-IN');
-    outputDate.value = formateDate;
-     
+function capthchasuccess() {
+  capthachecked = true;
 }
