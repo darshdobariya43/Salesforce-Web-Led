@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <title>Web To Lead</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>    
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+
+<body>
+    <h1>WEB TO LEAD FORM </h1>
+    <div>
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQy00000HeQOb"
+            method="POST" onsubmit="beforSubmit(event)">
+
+            <input type=hidden name="oid" value="00DQy00000HeQOb">
+            <input type=hidden name="retURL" value="https://darshdobariya43.github.io/dark-profile">
+            <input type=hidden name="Led_Generate_Date__c"  class="outputDate">
+
+
+            <label for="first_name">First Name</label><input id="first_name" maxlength="40" name="first_name" size="20" required="true"
+                type="text" /><br>
+
+            <label for="last_name">Last Name</label><input id="last_name" maxlength="80" name="last_name" size="20" required="true"
+                type="text" /><br>
+
+            <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" required="true" /><br>
+
+            <label for="company">Company</label><input id="company" maxlength="40" name="company" size="20" required="true"
+                type="text" /><br>
+
+            <label for="Led Generate Date">Led Generate Date</label><input  required="true"
+                type="date" class="inputDate" /><br>
+
+            <!-- Led Generate Date:<span class="dateInput dateOnlyInput"><input  id="00NQy00000ORkc3" name="00NQy00000ORkc3" size="12" type="text" /></span><br> -->
+            <div class="g-recaptcha" data-sitekey="6Ldr7ugqAAAAANdhFZ0o7OAshE0xriZm3o9mtOw1"></div><br>
+            <input type="submit" name="submit" class="button">
+
+        </form>
+ 
+    
+    
+</body>
+
+</html>
